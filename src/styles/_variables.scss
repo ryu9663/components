@@ -1,0 +1,26 @@
+$sidebar-width__expanded: 311px;
+$sidebar-width__collapsed: 67px;
+
+/**
+* z-index 변수
+**/
+$below: -1;
+$above: 1;
+
+// 페이지 레이아웃
+$zlayout: 0;
+$zlayout__backdrop: $below + $zlayout;
+$zlayout__popover: $above + $zlayout; // 드랍다운 메뉴, select 옵션
+$zlayout__tooltip: $above + $zlayout__popover; // 툴팁 메시지
+
+// 팝업 (모달, 토스트 메시지, 배너, 설문)
+$zpopup: 100;
+$zpopup__backdrop: $below + $zpopup; // 팝업의 백그라운드 오버레이
+$zpopup__modal: $zpopup;
+$zpopup__toast: $above + $zpopup;
+
+// 페이지 위에 표시되는 전환 (로딩, 페이지 전환 효과)
+$ztransition: 200;
+$ztransition__loader: $ztransition;
+
+$page-title--height: 86px;
